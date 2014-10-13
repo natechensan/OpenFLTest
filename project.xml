@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="OpenFLTest" package="com.example.openfltest" version="1.0.0" company="Company Name" />
+	<app main="Tester" path="Export" file="OpenFLTest" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<assets path="Assets/sounds" rename="sounds" unless="web">
+		<music path="theme.ogg" id="soundTheme" />
+	</assets>
+	<icon path="Assets/images/openfl.svg" />
+	<window width="640" height="480"/>
+</project>
